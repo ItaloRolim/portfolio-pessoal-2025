@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         i++;
         setTimeout(function() {
           typeWriter(element, text, i, callback);
-        }, 50); // velocidade da digitação (50ms)
+        }, 15); // velocidade da digitação (50ms)
       } else if (callback) {
         setTimeout(callback, 500);
       }
