@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Dev Italo Rolim</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="imagens/x-icon">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/andamento-projeto.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans smooth-scroll">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full z-50 bg-gray-900 bg-opacity-90 backdrop-filter backdrop-blur-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-500 hover:text-blue-400 transition duration-300">Dev<span
+                    class="text-white"> Italo Rolim</span></a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-blue-500 transition duration-300">Início</a>
+                <a href="#about" class="hover:text-blue-500 transition duration-300">Sobre</a>
+                <a href="#skills" class="hover:text-blue-500 transition duration-300">Habilidades</a>
+                <a href="#projects" class="hover:text-blue-500 transition duration-300">Projetos</a>
+                <a href="#contact" class="hover:text-blue-500 transition duration-300">Contato</a>
+            </div>
+            <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-gray-800 px-6 py-4">
+            <div class="flex flex-col space-y-4">
+                <a href="#home" class="hover:text-blue-500 transition duration-300">Início</a>
+                <a href="#about" class="hover:text-blue-500 transition duration-300">Sobre</a>
+                <a href="#skills" class="hover:text-blue-500 transition duration-300">Habilidades</a>
+                <a href="#projects" class="hover:text-blue-500 transition duration-300">Projetos</a>
+                <a href="#contact" class="hover:text-blue-500 transition duration-300">Contato</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center pt-16">
+        <div class="container mx-auto px-6 py-16 text-center fade-in">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Olá, eu sou <span class="text-blue-500">Italo Rolim</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-300 mb-8">Desenvolvedor Front-end</p>
+            <div class="flex justify-center space-x-4">
+                <a href="#projects"
+                    class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Ver
+                    projetos</a>
+                <a href="#contact"
+                    class="bg-transparent hover:bg-blue-500 text-blue-500 hover:text-white border border-blue-500 px-6 py-3 rounded-lg font-medium transition duration-300">Contato</a>
+            </div>
+            <div class="mt-12 flex justify-center space-x-6">
+                <a href="https://github.com/ItaloRolim" target="_blank" class="social-icon text-2xl" title="GitHub"><i
+                        class="fab fa-github"></i></a>
+
+                <a href="https://www.linkedin.com/in/italo-rolim-86a390291/" target="_blank"
+                    class="social-icon text-2xl" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+
+                <a href="https://www.instagram.com/italoir_?igsh=cTJoOGt1YmFkbHN2&utm_source=qr" target="_blank"
+                    class="social-icon text-2xl" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sobre Mim</h2>
+                <div class="w-16 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center justify-between fade-in">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <!-- Container para o efeito de zoom -->
+                    <div class="overflow-hidden rounded-full w-40 h-40 md:w-60 md:h-60 mx-auto shadow-lg relative">
+                        <img src="imagens/foto-perfil-2025.jpg" alt="Foto do Desenvolvedor"
+                            class="w-full h-full object-cover transition-transform duration-300 hover:scale-110">
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-blue-400">Quem eu sou</h3>
+                    <p class="text-gray-300 mb-6">
+                        Olá! Sou um desenvolvedor front-end apaixonado por criar interfaces interativas e experiências
+                        de usuário incríveis. Com forte foco em usabilidade e design moderno, transformo ideias em
+                        aplicações web responsivas e elegantes.
+                    </p>
+                    <p class="text-gray-300 mb-6">
+                        Trabalho com as tecnologias mais recentes do mercado e estou sempre em busca de aprender
+                        novas habilidades para entregar soluções ainda melhores.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#contact"
+                            class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Entre
+                            em contato</a>
+                        <a href="cv/Currículo - ItaloIvanidoRolim.pdf" target="_blank"
+                            class="bg-transparent hover:bg-gray-700 text-gray-300 hover:text-white border border-gray-300 px-6 py-3 rounded-lg font-medium transition duration-300">Baixar
+                            CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Minhas Habilidades</h2>
+                <div class="w-16 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+
+            <!-- Desenvolvimento Web -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-white text-center">Desenvolvimento Web</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- HTML5 -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">HTML5</h3>
+                        <p class="text-gray-400">Estruturação semântica, SEO amigável e marcação moderna para websites
+                            responsivos.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 95%"></div>
+                        </div>
+                    </div>
+                    <!-- CSS3 -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">CSS3 & Tailwind</h3>
+                        <p class="text-gray-400">Layouts responsivos, animações fluidas e estilização moderna com
+                            Tailwind
+                            CSS.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- JavaScript -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">JavaScript</h3>
+                        <p class="text-gray-400">Interatividade avançada, manipulação DOM e funcionalidades dinâmicas
+                            para
+                            websites.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <!-- React -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">React</h3>
+                        <p class="text-gray-400">Desenvolvimento de interfaces de usuário com componentização e gestão
+                            de
+                            estado eficiente.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <!-- Node.js -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Node.js</h3>
+                        <p class="text-gray-400">Desenvolvimento backend com JavaScript, APIs RESTful e aplicações em
+                            tempo real.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <!-- Git & GitHub -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Git & GitHub</h3>
+                        <p class="text-gray-400">Controle de versão, colaboração em equipe e gerenciamento eficiente de
+                            código.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Design & UX -->
+            <div class="mb-12">
+                <h3 class="text-2xl font-bold mb-6 text-white text-center">Design & Experiência do Usuário</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Design Responsivo -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Design Responsivo</h3>
+                        <p class="text-gray-400">Criação de layouts que se adaptam perfeitamente a qualquer dispositivo
+                            e
+                            tamanho de tela.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- UI Design -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">UI Design</h3>
+                        <p class="text-gray-400">Criação de interfaces visuais atraentes, harmoniosas e com identidade
+                            visual consistente.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <!-- UX Design -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">UX Design</h3>
+                        <p class="text-gray-400">Desenvolvimento de experiências intuitivas, pesquisa de usuários e
+                            fluxos de navegação eficientes.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ferramentas de Produtividade -->
+            <div>
+                <h3 class="text-2xl font-bold mb-6 text-white text-center">Ferramentas de Produtividade</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Excel -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Microsoft Excel</h3>
+                        <p class="text-gray-400">Análise de dados, fórmulas avançadas, tabelas dinâmicas e automação com
+                            macros.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <!-- Word -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-file-word"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Microsoft Word</h3>
+                        <p class="text-gray-400">Elaboração de documentos profissionais, formatação avançada e edição
+                            colaborativa.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <!-- Power BI -->
+                    <div class="bg-gray-800 p-8 rounded-lg shadow-md hover:shadow-lg transition duration-300 fade-in">
+                        <div class="text-blue-500 text-4xl mb-4">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-3">Power BI</h3>
+                        <p class="text-gray-400">Visualização de dados, dashboards interativos e análise de métricas
+                            para tomada de decisão.</p>
+                        <div class="mt-4 w-full bg-gray-700 rounded-full h-2">
+                            <div class="bg-blue-500 h-2 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projetos Section -->
+    <section id="projects" class="py-20 bg-gray-800">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meus Projetos</h2>
+                <div class="w-16 h-1 bg-blue-500 mx-auto"></div>
+                <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+                    Aqui estão alguns dos meus trabalhos recentes. Cada projeto representa um desafio único que me
+                    ajudou a expandir minhas habilidades.
+                </p>
+            </div>
+            <!-- Projetos Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card group bg-gray-900 rounded-lg overflow-hidden shadow-lg fade-in"
+                    data-category="website">
+                    <div class="relative overflow-hidden">
+                        <img src="imagens/site-da-logicflow.png" alt="Projeto 1"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                            <div class="p-4">
+                                <a href="https://logic-flow-bb8cd.firebaseapp.com/" target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo</a>
+                                <a href="https://github.com/ItaloRolim/site-empresa-logicflow-main" target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Projeto Logic Flow</h3>
+                        <p class="text-gray-400 mb-4">Fui responsável pelo desenvolvimento do site institucional da
+                            Logic Flow</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">HTML5</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">CSS3</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Tailwind</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Projeto 2 -->
+                <div class="project-card group bg-gray-900 rounded-lg overflow-hidden shadow-lg fade-in"
+                    data-category="app">
+                    <div class="relative overflow-hidden">
+                        <img src="imagens/projeto-websoft.png" alt="Projeto 2"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                            <div class="p-4">
+                                <a href="https://agencia-websoft.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAaZF8KstV7ligvyZPq785N-XRXDXQODcr730gGRGLqV6ky4XDK-hJm_BKeQ_aem_PY0T1mlAPqw5qLr9gPzq7Q"
+                                    target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo</a>
+
+                                <a href="https://github.com/ItaloRolim/agencia-websoft" target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Código</a>
+
+                                <a href="https://www.linkedin.com/posts/italo-rolim-86a390291_dev-frontend-backend-activity-7300609689581461504-wdzW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa2kdIBWnspy-No6UZO_1RILB_11B1Btpg"
+                                    target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo
+                                    no linkedin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Portfólio + Catálogo de Serviços Digitais</h3>
+                        <p class="text-gray-400 mb-4">A Web Soft é uma ideia minha, criada para trazer soluções digitais
+                            de forma profissional e acessível.</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">React + Vite</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Node.js</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">HTML5</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Firebase</span>
+
+
+                        </div>
+                    </div>
+                    <!-- Projeto 3 -->
+                </div>
+                <div class="project-card group bg-gray-900 rounded-lg overflow-hidden shadow-lg fade-in"
+                    data-category="ui">
+                    <div class="relative overflow-hidden">
+                        <img src="imagens/projeto-convertfacil.png" alt="Projeto 3"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                            <div class="p-4">
+                                <a href="#"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo</a>
+
+                                <a href="https://github.com/ItaloRolim/convertfacil-sistema-de-arquivos" target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Código</a>
+
+                                <a href="https://www.linkedin.com/posts/italo-rolim-86a390291_tecnologia-automaaexaeto-javascript-activity-7303628849915785216-f-Jy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa2kdIBWnspy-No6UZO_1RILB_11B1Btpg"
+                                    target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Demo
+                                    no LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">ConvertFácil</h3>
+                        <p class="text-gray-400 mb-4">Converti Fácil é uma ferramenta intuitiva e eficiente,
+                            desenvolvida para simplificar a conversão de PDF para Excel. Com interface amigável e
+                            responsiva, atende tanto usuários comuns quanto profissionais que buscam agilidade e
+                            precisão.
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">HTML5</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">CSS3</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Tailwind</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Animação com
+                                Lottie</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">JavaScript</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs"> Biblioteca
+                                PDF.js</span>
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Biblioteca SheetJS
+                                (XLSX)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Project Section -->
+<!-- <section id="current-project" class="py-20 bg-gray-900">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-12 fade-in">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4">Projeto Atual</h2>
+            <div class="w-16 h-1 bg-blue-500 mx-auto"></div>
+            <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+                Acompanhe o desenvolvimento do projeto em que estou trabalhando no momento.
+            </p>
+        </div>
+
+        <div class="bg-gray-800 rounded-lg shadow-lg overflow-hidden fade-in">
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row">
+                    <div class="md:w-1/2 mb-6 md:mb-0 md:pr-8">
+                        <img id="project-image" src="imagens/projeto-websoft.png" alt="Projeto Atual"
+                            class="w-full h-64 object-cover rounded-lg shadow-md">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 id="project-title" class="text-2xl font-bold text-blue-400 mb-3">App de Gerenciamento
+                            Financeiro</h3>
+                        <p id="project-description" class="text-gray-300 mb-6">
+                            Aplicação web para controle financeiro pessoal com dashboard interativo, categorização
+                            automática de despesas e relatórios personalizados.
+                        </p>
+
+                        <div class="mb-6">
+                            <h4 class="text-xl font-semibold mb-3">Tecnologias</h4>
+                            <div class="flex flex-wrap gap-2" id="project-technologies">
+                                <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">React</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Node.js</span>
+                                <span
+                                    class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">MongoDB</span>
+                                <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Tailwind
+                                    CSS</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span id="current-stage" class="font-medium text-gray-200">Desenvolvimento
+                                    Frontend</span>
+                                <span id="progress-percentage" class="font-medium text-blue-400">65%</span>
+                            </div>
+                            <div class="w-full bg-gray-700 rounded-full h-3">
+                                <div id="progress-bar"
+                                    class="bg-blue-500 h-3 rounded-full transition-all duration-1000"
+                                    style="width: 65%"></div>
+                            </div>
+
+                            <div class="mt-6 space-y-4">
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
+                                        <i class="fas fa-check text-white text-xs"></i>
+                                    </div>
+                                    <span class="ml-3 text-gray-300">Planejamento e Design</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 rounded-full bg-green-500 flex items-center justify-center">
+                                        <i class="fas fa-check text-white text-xs"></i>
+                                    </div>
+                                    <span class="ml-3 text-gray-300">Configuração da Infraestrutura</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div
+                                        class="w-6 h-6 rounded-full bg-blue-500 flex items-center justify-center animate-pulse">
+                                        <i class="fas fa-spinner text-white text-xs"></i>
+                                    </div>
+                                    <span class="ml-3 text-white font-medium">Desenvolvimento Frontend</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 rounded-full bg-gray-600 flex items-center justify-center">
+                                        <i class="fas fa-clock text-white text-xs"></i>
+                                    </div>
+                                    <span class="ml-3 text-gray-400">Desenvolvimento Backend</span>
+                                </div>
+                                <div class="flex items-center">
+                                    <div class="w-6 h-6 rounded-full bg-gray-600 flex items-center justify-center">
+                                        <i class="fas fa-clock text-white text-xs"></i>
+                                    </div>
+                                    <span class="ml-3 text-gray-400">Testes e Lançamento</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 pt-6 border-t border-gray-700">
+                    <h4 class="text-xl font-semibold mb-3">Últimas Atualizações</h4>
+                    <div class="space-y-4" id="project-updates">
+                        <div class="flex">
+                            <div class="mr-4 flex-shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-blue-600 flex items-center justify-center">
+                                    <i class="fas fa-code text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">05 de março, 2025</p>
+                                <p class="text-gray-300">Implementação da interface de visualização de relatórios
+                                    financeiros concluída.</p>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <div class="mr-4 flex-shrink-0">
+                                <div class="w-10 h-10 rounded-full bg-purple-600 flex items-center justify-center">
+                                    <i class="fas fa-cogs text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400">28 de fevereiro, 2025</p>
+                                <p class="text-gray-300">Integração do sistema de autenticação e segurança dos dados
+                                    do usuário.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 flex justify-end">
+                    <button id="view-repository"
+                        class="bg-gray-700 hover:bg-gray-600 text-white px-4 py-2 rounded-lg transition duration-300">
+                        <i class="fab fa-github mr-2"></i>Ver Repositório
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Entre em Contato</h2>
+                <div class="w-16 h-1 bg-blue-500 mx-auto"></div>
+                <p class="mt-4 text-gray-300 max-w-2xl mx-auto">
+                    Tem um projeto interessante em mente? Vamos conversar sobre como podemos trabalhar juntos para
+                    torná-lo realidade.
+                </p>
+            </div>
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Contact Info -->
+                <div class="md:w-1/3 bg-gray-800 p-8 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-400">Informações de Contato</h3>
+                    <div class="flex items-start mb-6">
+                        <div class="text-blue-500 text-xl mr-4">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Localização</h4>
+                            <p class="text-gray-400">Santo Antônio dos Lopes-MA, Brasil</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <div class="text-blue-500 text-xl mr-4">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">Email</h4>
+                            <p class="text-gray-400">italorolim118px@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start mb-6">
+                        <div class="text-blue-500 text-xl mr-4">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium mb-1">WhatsApp</h4>
+                            <p class="text-gray-400">+55 (99) 98422-7040</p>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-medium mb-4">Redes Sociais</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/ItaloRolim" target="_blank"
+                                class="social-icon w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/italo-rolim-86a390291/" target="_blank"
+                                class="social-icon w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/italoir_?igsh=cTJoOGt1YmFkbHN2&utm_source=qr"
+                                target="_blank"
+                                class="social-icon w-10 h-10 bg-gray-700 rounded-full flex items-center justify-center hover:bg-blue-600 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Contact Form -->
+                <div class="md:w-2/3 bg-gray-800 p-8 rounded-lg shadow-lg fade-in">
+                    <h3 class="text-2xl font-semibold mb-6 text-blue-400">Envie uma Mensagem</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-gray-300">Nome</label>
+                                <input type="text" id="name" name="name"
+                                    class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                                    required>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-300">Assunto</label>
+                            <input type="text" id="subject" name="subject"
+                                class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                                required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-300">Mensagem</label>
+                            <textarea id="message" name="message" rows="5"
+                                class="mt-1 block w-full bg-gray-700 border border-gray-600 rounded-lg p-3 focus:outline-none focus:border-blue-500"
+                                required></textarea>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                class="w-full bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Enviar
+                                Mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-400">&copy; 2025 Italo Rolim. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/andamento-projetos.js"></script>
+</body>
+
+</html>

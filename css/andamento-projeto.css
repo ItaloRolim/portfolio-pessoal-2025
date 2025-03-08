@@ -1,0 +1,83 @@
+
+/* Animação de entrada para elementos fade-in */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animações para a seção de projeto atual */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#current-project .animate-pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Hover effects para o card do projeto */
+#current-project .bg-gray-800 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#current-project .bg-gray-800:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo para o indicador de estágio atual */
+#current-project .text-white.font-medium {
+    position: relative;
+}
+
+#current-project .text-white.font-medium::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #3B82F6;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 8px #3B82F6;
+}
+
+/* Melhorias para o botão de repositório */
+#current-project #view-repository {
+    position: relative;
+    overflow: hidden;
+}
+
+#current-project #view-repository::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+#current-project #view-repository:hover::before {
+    left: 100%;
+}
