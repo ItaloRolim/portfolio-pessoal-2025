@@ -309,13 +309,23 @@
                     <div class="relative overflow-hidden">
                         <img src="imagens/site-da-logicflow.png" alt="Projeto 1"
                             class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                        <!-- Desktop overlay (visible on hover) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 hidden md:flex items-end">
                             <div class="p-4">
                                 <a href="https://logic-flow-bb8cd.firebaseapp.com/" target="_blank"
                                     class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo</a>
                                 <a href="https://github.com/ItaloRolim/site-empresa-logicflow-main" target="_blank"
                                     class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Código</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile buttons (always visible) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent md:hidden flex items-end">
+                            <div class="p-4">
+                                <a href="https://logic-flow-bb8cd.firebaseapp.com/" target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 text-sm rounded-lg mr-2 transition duration-300">Demo</a>
+                                <a href="https://github.com/ItaloRolim/site-empresa-logicflow-main" target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 text-sm rounded-lg transition duration-300">Código</a>
                             </div>
                         </div>
                     </div>
@@ -337,19 +347,32 @@
                     <div class="relative overflow-hidden">
                         <img src="imagens/projeto-websoft.png" alt="Projeto 2"
                             class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                        <!-- Desktop overlay (visible on hover) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 hidden md:flex items-end">
                             <div class="p-4">
                                 <a href="https://agencia-websoft.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAaZF8KstV7ligvyZPq785N-XRXDXQODcr730gGRGLqV6ky4XDK-hJm_BKeQ_aem_PY0T1mlAPqw5qLr9gPzq7Q"
                                     target="_blank"
                                     class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo</a>
-
                                 <a href="https://github.com/ItaloRolim/agencia-websoft" target="_blank"
                                     class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Código</a>
-
                                 <a href="https://www.linkedin.com/posts/italo-rolim-86a390291_dev-frontend-backend-activity-7300609689581461504-wdzW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa2kdIBWnspy-No6UZO_1RILB_11B1Btpg"
                                     target="_blank"
                                     class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo
+                                    no linkedin</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile buttons (always visible) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent md:hidden flex items-end">
+                            <div class="p-4">
+                                <a href="https://agencia-websoft.vercel.app/?fbclid=PAZXh0bgNhZW0CMTEAAaZF8KstV7ligvyZPq785N-XRXDXQODcr730gGRGLqV6ky4XDK-hJm_BKeQ_aem_PY0T1mlAPqw5qLr9gPzq7Q"
+                                    target="_blank"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 text-sm rounded-lg mr-2 mb-1 inline-block transition duration-300">Demo</a>
+                                <a href="https://github.com/ItaloRolim/agencia-websoft" target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 text-sm rounded-lg mr-2 mb-1 inline-block transition duration-300">Código</a>
+                                <a href="https://www.linkedin.com/posts/italo-rolim-86a390291_dev-frontend-backend-activity-7300609689581461504-wdzW?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa2kdIBWnspy-No6UZO_1RILB_11B1Btpg"
+                                    target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 text-sm rounded-lg mb-1 inline-block transition duration-300">Demo
                                     no linkedin</a>
                             </div>
                         </div>
@@ -364,29 +387,39 @@
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Node.js</span>
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">HTML5</span>
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Firebase</span>
-
-
                         </div>
                     </div>
-                    <!-- Projeto 3 -->
                 </div>
+                <!-- Projeto 3 -->
                 <div class="project-card group bg-gray-900 rounded-lg overflow-hidden shadow-lg fade-in"
                     data-category="ui">
                     <div class="relative overflow-hidden">
                         <img src="imagens/projeto-convertfacil.png" alt="Projeto 3"
                             class="w-full h-64 object-cover transition duration-500 group-hover:scale-110">
-                        <div
-                            class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end">
+                        <!-- Desktop overlay (visible on hover) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-100 transition duration-300 hidden md:flex items-end">
                             <div class="p-4">
                                 <a href="#"
                                     class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg mr-2 transition duration-300">Demo</a>
-
                                 <a href="https://github.com/ItaloRolim/convertfacil-sistema-de-arquivos" target="_blank"
                                     class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Código</a>
-
                                 <a href="https://www.linkedin.com/posts/italo-rolim-86a390291_tecnologia-automaaexaeto-javascript-activity-7303628849915785216-f-Jy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa2kdIBWnspy-No6UZO_1RILB_11B1Btpg"
                                     target="_blank"
                                     class="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded-lg transition duration-300">Demo
+                                    no LinkedIn</a>
+                            </div>
+                        </div>
+                        
+                        <!-- Mobile buttons (always visible) -->
+                        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent md:hidden flex items-end">
+                            <div class="p-4">
+                                <a href="#"
+                                    class="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 text-sm rounded-lg mr-2 mb-1 inline-block transition duration-300">Demo</a>
+                                <a href="https://github.com/ItaloRolim/convertfacil-sistema-de-arquivos" target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 text-sm rounded-lg mr-2 mb-1 inline-block transition duration-300">Código</a>
+                                <a href="https://www.linkedin.com/posts/italo-rolim-86a390291_tecnologia-automaaexaeto-javascript-activity-7303628849915785216-f-Jy?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEa2kdIBWnspy-No6UZO_1RILB_11B1Btpg"
+                                    target="_blank"
+                                    class="bg-gray-800 hover:bg-gray-700 text-white px-3 py-1 text-sm rounded-lg mb-1 inline-block transition duration-300">Demo
                                     no LinkedIn</a>
                             </div>
                         </div>
@@ -397,6 +430,7 @@
                             desenvolvida para simplificar a conversão de PDF para Excel. Com interface amigável e
                             responsiva, atende tanto usuários comuns quanto profissionais que buscam agilidade e
                             precisão.
+                        </p>
                         <div class="flex flex-wrap gap-2">
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">HTML5</span>
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">CSS3</span>
@@ -404,7 +438,7 @@
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Animação com
                                 Lottie</span>
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">JavaScript</span>
-                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs"> Biblioteca
+                            <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Biblioteca
                                 PDF.js</span>
                             <span class="px-3 py-1 bg-blue-900 text-blue-300 rounded-full text-xs">Biblioteca SheetJS
                                 (XLSX)</span>
